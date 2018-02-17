@@ -1,0 +1,926 @@
+﻿body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#WelcomeScreen {
+    background: url('images/bg.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+#WelcomeScreen .ground {
+    background: url(images/grassMid.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.button_start {
+    width: 200px;
+    height: 40px;
+    background: url(images/grassHalf.png);
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    /*transform: scale(0.5);*/
+    position: absolute;
+    bottom: 90px;
+    left: calc(50vw - 100px);
+    font-size: 29px;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.author {
+    width: 150px;
+    height: 60px;
+    background: #dddddd;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50px;
+    /*transform: scale(0.5);*/
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.license {
+    position: absolute;
+    bottom: 180px;
+    left: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.button_home {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: cursive;
+    position: absolute;
+    margin-top: 20px;
+    right: 10px;
+}
+
+#LicenseScreen {
+    background: url('images/bg.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+}
+
+#LicenseScreen .ground {
+    bottom: 0;
+}
+
+#LicenseScreen .content {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#LicenseScreen .content .content_holder {
+    position: fixed;
+    overflow-y: scroll;
+    height: 80vh;
+    width: 80vw;
+    overflow-wrap: break-word;
+}
+
+#LicenseScreen .content p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+#LevelSelectionScreen {
+    background: url('images/bg.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+}
+
+#LevelSelectionScreen .ground {
+    background: url(images/grassMid.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+}
+
+.level_selection {
+    width: 200px;
+    height: 40px;
+    background: url(images/grassHalf.png);
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    /*transform: scale(0.5);*/
+    position: absolute;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.level_1_start {
+    bottom: 225px;
+    left: calc(50vw - 180px);
+}
+
+.level_2_start {
+    bottom: 170px;
+    left: calc(50vw - 140px);
+}
+
+.level_3_start {
+    bottom: 110px;
+    left: calc(50vw - 100px);
+}
+
+#GameOverScreen {
+    width: 80%;
+    height: 50vh;
+    display: block;
+    background: url('images/bg.png');
+    background-repeat: repeat;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    border-radius: 30px;
+    display: none;
+    z-index: 200;
+}
+
+#GameOverScreen .text {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    /* transform: scale(0.5); */
+    position: absolute;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-family: cursive;
+    display: block;
+    top: 20%;
+    color: red;
+}
+
+#GameOverScreen .restart_bottom {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    /* transform: scale(0.5); */
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: cursive;
+    display: block;
+    top: 50%;
+    text-decoration: underline;
+    color: red;
+}
+
+#Level1 {
+    display: none;
+    height: 100vh;
+    position: relative;
+    background: url('images/bg.png');
+    background-repeat: repeat;
+}
+
+#Level1 > .bottom_image {
+    background: url(images/grassMid.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+}
+
+#Level2 {
+    display: none;
+    height: 100vh;
+    position: relative;
+    background: url('images/liquidWater.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#Level2 .ground {
+    background: url(images/castleMid.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 10 !important;
+}
+
+#Level2 .wall_left {
+    z-index: 10;
+    height: 100%;
+    width: 2px;
+    display: inline-block;
+    position: absolute;
+}
+
+#Level2 .wall_right {
+    z-index: 10;
+    height: 100%;
+    width: 2px;
+    display: inline-block;
+    position: absolute;
+    left: calc(100% - 2px);
+}
+
+#Level2 .blocker {
+    width: 51px;
+    height: 51px;
+    background: url('images/blockerMad.png');
+    position: absolute;
+    z-index: 10;
+}
+
+.fireball {
+    width: 22px;
+    height: 24px;
+    background: url('images/fireball.png');
+    position: absolute;
+    z-index: 10;
+}
+
+.coin_box {
+    width: 50px;
+    height: 50px;
+    background: url('images/boxCoin.png');
+    position: absolute;
+    z-index: 10;
+    background-size: cover;
+}
+
+.warn_box {
+    width: 50px;
+    height: 50px;
+    background: url('images/boxItemAlt_disabled.png');
+    position: absolute;
+    z-index: 10;
+    background-size: cover;
+}
+
+.fish {
+    width: 56px;
+    height: 36px;
+    background: url('images/fishSwim1.png');
+    position: absolute;
+    z-index: 10;
+    background-size: cover;
+}
+
+.blocker {
+    width: 36px;
+    height: 36px;
+    background: url('images/blockerMad.png');
+    position: absolute;
+    z-index: 10;
+    background-size: cover;
+}
+
+.bullet {
+    width: 70px;
+    height: 30px;
+    background: url('images/bullet2.png');
+    position: absolute;
+    z-index: 10;
+    background-size: cover;
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -khtml-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+}
+
+.box_alt {
+    width: 36px;
+    height: 36px;
+    background: url('images/boxItem.png');
+    position: absolute;
+    z-index: 10;
+    background-size: cover;
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+    background: url('images/buttonGreen.png');
+    position: absolute;
+    z-index: 10;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+
+#Level3 {
+    display: none;
+    height: 100vh;
+    position: relative;
+    background: url('images/dirtCenter.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#Level3 .wall_left {
+    z-index: 10;
+    height: 100%;
+    width: 2px;
+    display: inline-block;
+    position: absolute;
+}
+
+#Level3 .wall_right {
+    z-index: 10;
+    height: 100%;
+    width: 2px;
+    display: inline-block;
+    position: absolute;
+    left: calc(100% - 2px);
+}
+
+#Level3 .wall_top {
+    z-index: 10;
+    height: 2px;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0p;
+}
+
+#Level3 .ground {
+    background: url(images/stoneMid.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 10 !important;
+}
+
+#Level3 .scene {
+    height: 100vh;
+    position: absolute;
+    background: url('images/dirtCenter.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    top: 0px !important;
+}
+
+#Level3 > .ground {
+    z-index: 9 !important;
+}
+
+#Level3 .sign_right {
+    height: 70px;
+    position: absolute;
+    background: url('images/sign.png');
+    background-size: cover;
+    width: 70px;
+}
+
+#Level3 #Player {
+    width: 25px;
+    height: 36px;
+    background-size: cover !important;
+    background: url(images/p3_front.png);
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    left: 40px;
+}
+
+#Level3 .fly {
+}
+
+#Level3 .box {
+    position: absolute;
+    z-index: 10;
+    background: url('images/boxAlt.png');
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    display: inline-block;
+}
+
+#Level3 .boom {
+    position: absolute;
+    z-index: 10;
+    background: url('images/bomb.png');
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    display: inline-block;
+}
+
+.paused::before {
+    content: '';
+    background: #666666;
+    opacity: 0.8;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 100;
+}
+.scene {
+    background: url('images/bg.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+#Level1 #Player {
+    background: url(images/p3_front.png);
+    width: 66px;
+    height: 92px;
+    display: inline-block;
+    position: absolute;
+    bottom: 70px;
+    z-index: 10;
+    left: 40px;
+}
+
+#Level2 #Player {
+    background: url(images/p3_front.png);
+    width: 66px;
+    height: 92px;
+    display: inline-block;
+    position: absolute;
+    bottom: 70px;
+    z-index: 10;
+    left: 40px;
+}
+
+.player_stand {
+    background: url(images/p3_front.png) !important;
+    width: 66px;
+    height: 92px;
+    display: inline-block;
+}
+
+.flipped {
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -khtml-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+}
+
+.cloud1 {
+    background: url(images/cloud1.png);
+    width: 128px;
+    height: 71px;
+    display: inline-block;
+    position: relative;
+}
+
+.cloud2 {
+    background: url(images/cloud2.png);
+    width: 129px;
+    height: 71px;
+    display: inline-block;
+    position: relative;
+}
+
+.cloud3 {
+    background: url(images/cloud3.png);
+    width: 129px;
+    height: 71px;
+    display: inline-block;
+    position: relative;
+}
+
+.cloud4 {
+    background: url(images/cloud1.png);
+    width: 128px;
+    height: 71px;
+    display: inline-block;
+    position: relative;
+}
+
+.ground {
+    background: url(images/grassMid.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 10 !important;
+}
+
+
+.enemy1 {
+    background: url(images/snailWalk1.png);
+    width: 54px;
+    height: 31px;
+    bottom: 70px;
+    right: 200px;
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+}
+
+.brick_wall {
+    position: absolute;
+    z-index: 10;
+    background: url('images/box.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    display: inline-block;
+}
+
+.fly {
+    position: absolute;
+    z-index: 10;
+    background: url('images/flyFly1.png');
+    width: 72px;
+    height: 36px;
+    background-size: cover;
+    display: inline-block;
+}
+
+.fly_border_top {
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    width: 100%;
+    height: 2px;
+}
+
+.fly_border_bottom {
+    position: absolute;
+    z-index: 10;
+    top: 80%;
+    width: 100%;
+    height: 2px;
+}
+
+/*Console buttons*/
+
+.console_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: fixed;
+    background-color: #666666;
+    z-index: 20;
+    opacity: 0.5;
+}
+
+    .console_button:hover {
+        opacity: 0.7;
+    }
+
+#LeftButton {
+    bottom: 5px;
+    left: 8px;
+    background-color: #ffffff;
+}
+
+#RightButton {
+    bottom: 5px;
+    left: 95px;
+    background-color: #ffffff;
+}
+
+#JumpButton {
+    bottom: 5px;
+    left: 182px;
+    background-color: #ffffff;
+}
+
+#DownButton {
+    bottom: 5px;
+    left: 269px;
+    background-color: #ffffff;
+}
+
+.jump_button_ico {
+    bottom: 5px;
+    width: 100%;
+    height: 100%;
+    background: url('images/up_orange.png');
+    background-size: cover;
+}
+
+.down_button_ico {
+    bottom: 5px;
+    width: 100%;
+    height: 100%;
+    background: url('images/down_orange.png');
+    background-size: cover;
+}
+
+.left_button_ico {
+    bottom: 5px;
+    width: 100%;
+    height: 100%;
+    background: url('images/down_orange.png');
+    background-size: cover;
+    transform: rotate(90deg);
+}
+
+.right_button_ico {
+    bottom: 5px;
+    width: 100%;
+    height: 100%;
+    background: url('images/up_orange.png');
+    background-size: cover;
+    transform: rotate(90deg);
+}
+
+#Leaderboard {
+    width: 140px;
+    height: 80px;
+    background-color: #dddddd;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    border-radius: 10px;
+}
+
+#Life {
+    color: blue;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#Life .ico {
+    background: url('images/hud_heartFull.png');
+    width: 28px;
+    height: 24px;
+    position: relative;
+    z-index: 20;
+    background-size: cover;
+    display: inline-block;
+}
+
+#Life .text {
+    margin-left: 20px;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 28px;
+}
+
+#Score {
+    color: blue;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.coin {
+    width: 30px;
+    height: 32px;
+    background: url('images/coin.png');
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+}
+
+#Coin2 {
+    right: 200px;
+    top: 571px;
+    left: 300px;
+}
+
+#Coin3 {
+    right: 200px;
+    top: 571px;
+    left: 330px;
+}
+
+.stand1 {
+    width: 200px;
+    height: 40px;
+    background: url('images/grassHalf.png');
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+}
+
+#help_button {
+    background: url('images/hud_keyBlue.png');
+    width: 44px;
+    height: 40px;
+    background-size: cover;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 9;
+}
+
+#help_information_holder {
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    top: 20px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    left: 10%;
+    text-align: center;
+    font-family: cursive;
+    top: 10%;
+    display: none;
+    z-index: 101;
+    overflow-y: scroll;
+}
+
+#help_information_holder .content_holder {
+    padding: 0 40px 0;
+}
+
+.help_close_icon {
+    position: fixed;
+    right: 16%;
+    top: 12%;
+}
+
+#Level1Completion {
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    top: 20px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    left: 10%;
+    text-align: center;
+    font-family: cursive;
+    top: 10%;
+    display: none;
+    z-index: 101;
+}
+
+#Level1Completion .level_1_completion_holder {
+    padding: 40px;
+    height: 90%;
+}
+
+#Level1Completion .text {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+#Level2Completion {
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    top: 20px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    left: 10%;
+    text-align: center;
+    font-family: cursive;
+    top: 10%;
+    display: none;
+    z-index: 101;
+}
+
+#Level2Completion .level_2_completion_holder {
+    padding: 40px;
+    height: 90%;
+}
+
+#Level2Completion .text {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+#Level3Completion {
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    top: 20px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    left: 10%;
+    text-align: center;
+    font-family: cursive;
+    top: 10%;
+    display: none;
+    z-index: 101;
+}
+
+#Level3Completion .level_3_completion_holder {
+    padding: 40px;
+    height: 90%;
+}
+
+#Level3Completion .text {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.spaceship {
+    background: url('images/Smiling-spaceship-game-character.png');
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    z-index: 10;
+}
+
+.spaceship_item {
+    background: url('images/boxAlt.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+/*Player walk*/
+
+.walk1 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk1.png') !important;
+}
+
+.walk2 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk2.png') !important;
+}
+
+.walk3 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk3.png') !important;
+}
+
+.walk4 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk4.png') !important;
+}
+
+.walk5 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk4.png') !important;
+}
+
+.walk6 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk6.png') !important;
+}
+
+.walk7 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk7.png') !important;
+}
+
+.walk8 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk8.png') !important;
+}
+
+.walk9 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk9.png') !important;
+}
+
+.walk10 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk10.png') !important;
+}
+
+.walk11 {
+    width: 72px !important;
+    height: 92px !important;
+    background: url('images/p3_walk11.png') !important;
+}

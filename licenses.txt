@@ -1,0 +1,47 @@
+bg.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+blockerMad.png - https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+bomb.png - https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+box.png - https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+boxAlt.png - https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+boxCoin.png - https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+boxItem.png - https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+boxItemAlt_disabled.png - https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+bullet2.png - from https://opengameart.org/content/bullets-game-asset - Bevouliin - License CC-BY
+buttonGreen.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+buttonGreen_pressed.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+castleMid.png - - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+cloud1.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+cloud2.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+cloud3.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+coin.png - from https://opengameart.org/content/coin-icon - Galang Piliang - License CC-BY
+dirtCenter.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+down_orange.png - from https://opengameart.org/content/gui-window-buttons - John Harvey - License CC-BY
+fireball.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+fishSwim1.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+flyFly1.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+grassHalf.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+grassMid.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+hud_gem_blue.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+hud_heartFull.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+hud_keyBlue.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+hud_p2Alt.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+liquidWater.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+Little_People_At_Work.mp3 - from https://opengameart.org/content/little-people-at-work-loop - HorrorPen License CC-BY
+p3_front.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_hurt.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_jump.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk1.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk2.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk3.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk4.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk5.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk6.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk7.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk8.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk9.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk10.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+p3_walk11.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+sign.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+snailWalk1.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+stoneMid.png - from https://opengameart.org/content/platformer-tiles - Kenney - License Public Domain
+up_orange.png - from https://opengameart.org/content/gui-window-buttons - John Harvey - License CC-BY
